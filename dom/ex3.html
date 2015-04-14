@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ex03</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p class="selected">
+        flysic
+      </p>
+      <img src="ex3.jpg" alt="ex3" class="button" width="30%"/>
+    </div>
+    <script type="text/javascript">
+      var body = document.querySelector("body");
+      document.writeln(body.nodeName);
+      var div = document.querySelectorAll("#myDiv")[0];
+      document.writeln(div.firstChild.nextSibling.innerHTML);
+      var img = document.querySelector("img.button");
+      document.writeln(img.src);
+    </script>
+  </body>
+</html>

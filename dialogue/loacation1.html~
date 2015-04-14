@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 function getSearch() {
+	     var search = location.search.length>0 ? location.search.substring(1) : "";
+	     var args = {};
+	     var strs = search.length>0 ? search.split("&") : [];
+	     var item, name, value;
+	     for (var i=0; i<strs.length; i++) {
+		 item = strs[i].split("=");
+		 name = item[0];
+		 value = item[1];
+		 args[name] = value;
+	     }
+	     return args;
+	 }
+	 document.write(getSearch()["s"]);
+	 document.write(getSearch()["j"]);
+	</script>
+    </body>
+</html>
+
+    

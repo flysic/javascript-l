@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 function fn(num) {
+	     if (num<=1) {
+		 return 1;
+	     }
+	     return num*arguments.callee(num-1);
+	 }
+	 alert(fn(100));
+	 //var fac = fn;
+	 //fn = null;
+	 //alert(fac(100));
+	 var fac = (function f(num) {
+	     if (num<=1) {
+		 return 1;
+	     }
+	     return num*f(num-1);
+	 });
+	 alert(fac(100));
+	</script>
+    </body>
+</html>
+
+    

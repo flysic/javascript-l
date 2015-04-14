@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 location.hash = "#machine";
+	 location.search = "?name=shaoy";
+	 document.write(location.hostname);
+	 document.write("</br>");	 	 
+	 try {
+	     location.host = "www.163.com";
+	 } catch(e) {
+	     document.write(e);
+	     document.write("</br>");	 
+	 }
+	</script>
+    </body>
+</html>
+
+    

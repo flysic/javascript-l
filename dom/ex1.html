@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ex01</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function loadScript(url) {
+        document.writeln("loadind...</br>");
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = url;
+        document.body.appendChild(script);
+        document.writeln("load over");
+      }
+      function loadStyles(url) {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = url;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(link);
+      }
+      loadScript("ex1.js");
+      setTimeout(function() {
+        loadStyles("ex1.css");
+      }, 2000);
+    </script>
+  </body>
+</html>

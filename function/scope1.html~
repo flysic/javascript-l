@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 function fun() {
+	     var num = 0;
+	     function f() {
+		 return false;
+	     }
+	     this.publicMethod = function() {
+		 num++;
+		 f();
+		 return num;
+	     };
+	 }
+	 var fly = new fun();
+	 alert(fly.publicMethod());
+	</script>
+    </body>
+</html>
+
+    

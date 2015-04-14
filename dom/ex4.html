@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ex03</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      machine
+      <p class="selected">
+        flysic
+      </p>
+      <img src="ex3.jpg" alt="ex3" class="button" width="30%"/>
+    </div>
+    <script type="text/javascript">
+      var div = document.querySelector("#myDiv");
+      document.writeln(div.childNodes.length);
+      document.writeln(div.childElementCount);
+      document.writeln(div.firstChild.data);
+      document.writeln(div.firstElementChild.innerHTML);
+    </script>
+  </body>
+</html>

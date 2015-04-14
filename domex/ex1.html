@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ex01</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      machine
+      <p class="selected">
+        flysic
+      </p>
+    </div>
+    <script type="text/javascript">
+  var ul = document.createElement("ul");
+var li;
+for(var i=0; i<50; i++) {
+  li = document.createElement("li");
+  li.textContent = "shaoy";
+  ul.appendChild(li);
+}
+document.body.appendChild(ul);
+setTimeout(function() {
+  li.scrollIntoView();
+}, 2000);
+                   </script>
+  </body>
+</html>

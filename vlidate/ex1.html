@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 document.write(isSortable({sort:true}));
+	 document.write("</br>");
+	 document.write(hasCreateElement());
+	 document.write("</br>");	 
+	 function isSortable(object) {
+	     return typeof object.sort=="function";
+	 }
+	 function hasCreateElement() {
+	     return typeof document.createElement=="function";
+	 }
+	 var result = !!(navigator.plugins && navigator.plugins.length);
+	 document.write(result);
+	 document.write("</br>");
+	 result = function() {
+	     var o = {toString : function(){}};
+	     var count = 0;
+	     for (var obj in o) {
+		 if (obj=="toString") {
+		     count++;
+		 }
+	     }
+	     return (count>1);
+	 }
+	 document.write(result());
+	 document.write("</br>");	 
+	</script>
+    </body>
+</html>
+
+    

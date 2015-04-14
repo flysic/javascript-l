@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>ex01</title>
+    </head>
+    <body>
+	<script type="text/javascript">
+	 setTimeout(function() {
+	     location.assign("http://www.sina.com");
+	 }, 1000);
+	</script>
+    </body>
+</html>
+
+    
